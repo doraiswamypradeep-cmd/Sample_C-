@@ -23,7 +23,7 @@ public class ProductAnalysis
         Console.WriteLine("=== Analysis ===");
         Console.WriteLine($"Total products: {products.Count}");
         Console.WriteLine($"Total quantity: {products.Sum(p => p.Qty)}");
-        Console.WriteLine($"Grand total:    Rs.{products.Sum(p => p.Total())}");
-        Console.WriteLine($"Average price:  Rs.{products.Average(p => p.Price):F2}");
+        Console.WriteLine($"Grand total:    Rs. {products.Sum(p => p.Total())}");
+        Console.WriteLine($"Average price:  Rs.  {products.Average(p => p.Price):F2}");
     }
 }
